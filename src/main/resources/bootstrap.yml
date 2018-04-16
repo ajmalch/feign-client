@@ -3,7 +3,7 @@ spring:
     name: feign-client-sample
   cloud:
     config:
-      uri: https://config-server-sample.herokuapp.com
+      uri: http://localhost:8888
 management:
   security:
     enabled: false
