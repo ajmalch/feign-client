@@ -22,9 +22,15 @@ public class FeignClientApplication {
 	}
 
 
-	@GetMapping("/hello")
+	@GetMapping("/feign-client/hello")
 	public String hello(){
 		return "From Feign client - " +feignClientSample.hello();
 	}
+
+	@GetMapping("/feign-client/hi")
+	public String hi(){
+		return "Hi From Feign client ";
+	}
+
 
 }
